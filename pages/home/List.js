@@ -9,7 +9,11 @@ import {
 import React, {Fragment} from 'react';
 
 const links = [
-    {id: 1, title: '技术栈', description: 'React Native',},
+    {
+        id: 1,
+        title: '技术栈',
+        description: 'React Native',
+    },
     {
         id: 2,
         title: '开发难度',
@@ -36,7 +40,7 @@ const links = [
         id: 6,
         title: '开发所需主要环境及第三方库',
         description: ' React 17.0.1 \n React Native 0.64.0 \n Java 1.8.0_281 \n Node 14.16.0\n Android 10 \n Android SDK 29.0.2',
-    }
+    },
 ];
 
 const List = (): Node => {
@@ -46,24 +50,14 @@ const List = (): Node => {
             {links.map(({id, title, link, description}) => (
                 <Fragment key={id}>
                     <View
-                        style={[
-                            styles.separator,
-                            {
-                                backgroundColor: isDarkMode ? Colors.dark : Colors.light,
-                            },
-                        ]}
+                        style={styles.separator}
                     />
                     <TouchableOpacity
                         accessibilityRole="button"
                         style={styles.linkContainer}>
                         <Text style={styles.link}>{title}</Text>
                         <Text
-                            style={[
-                                styles.description,
-                                {
-                                    color: isDarkMode ? Colors.lighter : Colors.dark,
-                                },
-                            ]}>
+                            style={styles.description}>
                             {description}
                         </Text>
                     </TouchableOpacity>
