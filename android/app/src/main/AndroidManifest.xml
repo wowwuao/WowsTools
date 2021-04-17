@@ -1,9 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.wowtools">
-
+    <!--获取网络权限-->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取收音权限-->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--改声音设置信息-->
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!--麦克风权限-->
     <uses-permission android:name="android.permission.MICROPHONE" />
     <uses-feature android:name="android.hardware.microphone" android:required="true" />
 
