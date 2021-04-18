@@ -6,3 +6,6 @@
 我会利用课余时间继续完善这个 App
 
 喜欢的话就点个 star ☆ 吧
+
+图标库要link之后才能使用
+react-native link react-native-vector-icons
