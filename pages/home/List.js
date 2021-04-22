@@ -43,15 +43,11 @@ const links = [
     },
 ];
 
-const List = (): Node => {
-    const isDarkMode = useColorScheme() === 'dark';
+const List = () => {
     return (
         <View style={styles.container}>
             {links.map(({id, title, link, description}) => (
                 <Fragment key={id}>
-                    <View
-                        style={styles.separator}
-                    />
                     <TouchableOpacity
                         accessibilityRole="button"
                         style={styles.linkContainer}>
@@ -90,9 +86,6 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         fontWeight: '400',
         fontSize: 18,
-    },
-    separator: {
-        height: StyleSheet.hairlineWidth,
     },
 });
 

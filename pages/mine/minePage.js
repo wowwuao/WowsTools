@@ -5,11 +5,9 @@ class MinePage extends React.Component {
     handleClick = () => {
         Alert.alert('', '这个没做超链接...');
     };
-
     render() {
         return (
             <View style={styles.container}>
-
                 <View style={styles.viewUser}>
                     <View style={styles.viewUserTop}>
                         <Image style={styles.imgUserTitle} source={require('./wowlogo.jpg')}/>

@@ -1,16 +1,13 @@
-import type {Node} from 'react';
 import {ImageBackground, StyleSheet, Text} from 'react-native';
 import React from 'react';
-import {HermesBadge} from 'react-native/Libraries/NewAppScreen';
 
-const Title = (): Node => {
+const Title = () => {
     return (
         <ImageBackground
             accessibilityRole="image"
             source={require('./bg.jpg')}
             style={[styles.background]}
             imageStyle={styles.logo}>
-            <HermesBadge/>
             <Text style={styles.text}>
                 欢迎来到
                 {'\n'}
@@ -32,6 +29,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover',
         marginLeft: -128,
         marginBottom: -192,
+        height: 250,
     },
     text: {
         fontSize: 40,
